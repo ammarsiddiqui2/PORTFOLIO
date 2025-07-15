@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">My Portfolio</h1>
+      <nav class="nav">
+        <button id="darkModeToggle">🌙</button>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about fade-in">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hi, Hi, I'm Ammar Ahmed Siddiqui. I'm passionate about learning software development. I started to learn from frontend and backend. i love creating user-friendly websites and applications that deliver value to users</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills fade-in">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skill-list">
+        <div class="skill-item">
+          <h3>HTML</h3>
+          <div class="skill-bar">
+            <div class="skill-progress html"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <h3>CSS</h3>
+          <div class="skill-bar">
+            <div class="skill-progress css"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <h3>JavaScript</h3>
+          <div class="skill-bar">
+            <div class="skill-progress js"></div>
+          </div>
+        </div>
+        <div class="skill-item">
+          <h3>React</h3>
+          <div class="skill-bar">
+            <div class="skill-progress react"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects fade-in">
+    <div class="container">
+      <h2>My Projects</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200" alt="Project 1">
+          <h3>Project 1</h3>
+          <p>A web application that does amazing things.</p>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200" alt="Project 2">
+          <h3>Project 2</h3>
+          <p>An e-commerce website built with modern tech.</p>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/300x200" alt="Project 3">
+          <h3>Project 3</h3>
+          <p>A mobile-responsive portfolio website.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact fade-in">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to get in touch, feel free to send me a message!</p>
+      <form action="https://formspree.io/f/mrblgera" method="post"
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Ammar siddiqui | All Rights Reserved</p>
+    </div>
+  </footer>
+  <script>
+    const toggleBtn = document.getElementById('darkModeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+  
+
+</body>
+</html>
